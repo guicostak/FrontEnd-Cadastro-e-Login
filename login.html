@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\login.css" />
+    <title>Login Banco</title>
+  </head>
+  <body>
+    <!--TELA DE LOGIN-->
+
+    <div class="main-login">
+      <div class="left-login">
+        <img src="images/Logo.png" id="logo" />
+        <h1>Faça login<br /><b>e simplifique sua vida!</b></h1>
+        <img src="images\telaLogin.svg" />
+      </div>
+
+      <div class="right-login">
+        <div class="card-login">
+          <h1>Acesse sua conta</h1>
+
+          <div class="textfield">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input
+              id="senha"
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="mostrar" name="termos" />
+            <label for="termos">Mostrar senha</label>
+          </div>
+
+          <button onclick="login()" class="btn-login">Entrar</button>
+          <label id="labelLogin"></label>
+          <p id="nav">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/login.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a307abb2c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

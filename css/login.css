@@ -1,0 +1,452 @@
+/* UNIVERSAIS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+
+:root{
+  --main-color: #ff8701;
+  --text-color: #f0ffffde;
+  --light-main: #ff6a00;
+  --light-text: #6a6e81;
+  --main-background: #ffffff;
+  --card-bakcground:  #5a5c66;
+
+  --main-font: Optima, sans-serif;
+  --secundary-font: Arial;
+}
+
+/*===============DESKTOP===============*/
+
+/* TELA DE LOGIN */
+
+.main-login{
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--main-background);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login{
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login h1{
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-size: 3vw;
+}
+.left-login h1 b{
+  margin-left: 3rem;
+  color: var(--light-text);
+}
+
+.left-login img{
+  width: 60%;
+}
+
+#logo{
+  width: 13%;
+  margin-left: 40vw;
+}
+
+.right-login{
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* CAIXA DE LOGIN */
+
+.card-login{
+  width: 75%;
+  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 35px;
+  background: var(--card-bakcground);
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1{
+  color: var(--light-main);
+  font-weight: 900;
+  font-family: var(--main-font);
+  font-size: 2.8rem;
+ 
+  margin-bottom: 6vh;
+}
+
+.textfield{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-block: 1vh;
+}
+
+.textfield > input{
+  width: 28vw;
+  
+  
+  border: none;
+  border-radius: 10px;
+  padding: 2vh;
+
+  background: #00000056;
+
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+}
+
+.checkbox{
+  margin-top: 2vh;
+  padding-right: 17vw;
+}
+
+.checkbox label{
+  margin-left: 0.5vw;
+  font-size: 1.2vw;
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+.textfield > label{
+  color: var(--text-color);
+  margin-bottom: 1vh;
+  font-family: var(--main-font); 
+}
+
+#labelLoginScss{
+  margin-top: 1vh;
+
+  text-align: center;
+  width: 16vw;
+  background-color: rgb(74, 155, 74);
+  border-radius: 10px;
+}
+
+#labelLoginScss b{
+  font-family: Arial;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#labelLogin{
+  margin-bottom: 3vh;
+}
+
+#labelLogin b{
+  font-family: Arial;
+  color: rgb(228, 142, 142);
+  font-size: 1rem;
+}
+
+
+.btn-login{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: var(--secundary-font);
+  font-weight: 800;
+  color: white;
+  
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  width: 30vw;
+  height: 10vh;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--main-color);
+  box-shadow: 0px 10px 20px #00000056;
+}
+
+.btn-login:hover{
+  background-color: var(--light-main);
+  color: var(--text-color);
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.btn-login:active{
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.card-login p{
+  font-size: 1.2vw;
+
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+.card-login a{
+  text-decoration: none;
+  color: var(--light-main);
+  font-family: var(--secundary-font)
+}
+
+.card-login a:hover{
+  color: var(--main-color);
+}
+
+.card-login a:active{
+  color: var(--light-main);
+}
+
+/*===============TABLETS===============*/
+
+@media only screen and (max-width: 950px) {
+  /* TELA DE CADASTRO */
+
+  body {
+    background: #ffffff;
+  }
+
+  .main-login {
+    width: 100vw;
+    height: 95rem;
+    margin-inline: 7,5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+  }
+
+  .left-login {
+    display: block; 
+    margin-left: 10vw;
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 2rem;
+
+    position: absolute;
+    top: 2rem;
+  }
+  .left-login img{
+    margin-inline: 10vw;
+  }
+
+  .left-login h1 {
+    margin-left: 4vw;
+    margin-top: 0;
+    font-size: 6vw;
+  }
+  #logo{
+   margin-bottom: 5vh;
+  }
+
+  .right-login {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 58rem;
+    margin-bottom: 10rem;
+  }
+  /* CAIXA DE CADASTRO */
+
+  .card-login {
+    width: 75%;
+    height: auto;
+    margin-top: 12vh;
+  }
+
+  .textfield > input {
+    width: 60vw;
+
+    font-size: 1rem;
+  }
+
+  .half-textfield > input {
+    display: flex;
+    width: 29vw;
+  }
+
+  .checkbox {
+    margin-top: 2vh;
+    margin-right: 20vw; 
+  }
+
+  .checkbox label {
+    font-size: 2.5vw;
+  }
+
+  #labelLoginScss{
+    margin-top: 1vh;
+  
+    text-align: center;
+    width: 30vw;
+    border-radius: 10px;
+  }
+  
+  #labelLoginScss b{
+    font-family: Arial;
+    font-size: 2.5vw;
+  }
+  
+  #labelLogin{
+    margin-bottom: 3vh;
+  }
+  
+  #labelLogin b{
+    font-family: Arial;
+    font-size: 2.5vw;
+  }
+
+  .btn-login {
+    font-size: 0.9rem;
+
+    width: 60vw;
+    height: 6rem;
+
+    margin: 2rem;
+  }
+  .card-login p {
+    font-size: 2.5vw;
+    margin-bottom: 3vh;
+  }
+
+  .card-login a {
+    font-size: 2.5vw;
+  }
+}
+
+/*===============SMARTPHONES===============*/
+
+
+@media only screen and (max-width: 600px) {
+  /* TELA DE CADASTRO */
+
+  html {
+    background: #ffffff;
+  }
+
+  .main-login {
+    width: 100vw;
+    height: 3rem;
+    margin-inline: 1;
+  }
+
+  .left-login {
+    display: none;
+  }
+
+  .left-login h1 {
+    display: none;
+  }
+  .left-login img {
+    display: none;
+  }
+
+  .right-login {
+    width: 100vw;
+    height: 60vh;
+    background-color: #ffffff;
+    margin-top: 113vh;
+  }
+
+  /* CAIXA DE CADASTRO */
+
+  .card-login {
+    width: 70%;
+    height: 10rem;
+    padding: 1vh 5vw;
+
+    display: table;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .card-login h1 {
+    font-size: 2.5rem;
+    text-align: center;
+
+    margin-bottom: 2vh;
+  }
+
+  .textfield > input {
+    width: 70vw;
+
+    font-size: 0.8rem;
+  }
+  .textfield > label {
+    font-size: 1rem;
+  }
+
+
+  .checkbox {
+    margin-top: 2vh;
+  }
+
+  .checkbox label {
+    font-size: 0.8rem;
+  }
+
+  #labelLoginScss{
+    margin-top: 1vh;
+
+    text-align: center;
+    width: 60vw;
+    border-radius: 10px;
+  }
+  
+  #labelLoginScss b{
+    font-family: Arial;
+    font-size: 3vw;
+  }
+
+  
+  #labelLogin b{
+    font-family: Arial;
+    font-size: 3vw;
+    margin-left: 1vw;
+  }
+
+  .btn-login {
+    font-size: 0.9rem;
+
+    width: 70vw;
+    height: 4rem;
+
+    padding-inline: 1rem;
+    margin: 1rem;
+  }
+  .card-login p {
+    font-size: 3vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    margin-left: 20vw;
+  }
+
+  .card-login a {
+    font-size: 3vw;
+  }
+}

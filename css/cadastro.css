@@ -1,0 +1,536 @@
+/* UNIVERSAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+
+:root{
+  --main-color: #ff8701;
+  --text-color: #f0ffffde;
+  --light-main: #ff6a00;
+  --light-text: #6a6e81;
+  --main-background: #ffffff;
+  --card-bakcground:  #5a5c66;
+
+  --main-font: Optima, sans-serif;
+  --secundary-font: Arial;
+}
+
+/*===============DESKTOP===============*/
+
+/* TELA DE CADASTR0 */
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--main-background);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login h1 {
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+  margin-left: 2vw;
+
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-size: 3vw;
+}
+.left-login h1 b {
+  margin-left: 3rem;
+  color: var(--light-text);
+}
+
+.left-login img {
+  width: 60%;
+}
+
+#logo{
+  width: 13%;
+  margin-left: 40vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* CAIXA DE CADASTRO */
+
+.card-login {
+  width: 75%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-block: 10vh;
+  margin-bottom: 10vh;
+  background: var(--card-bakcground);
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px #00000056;
+}
+
+.card-login h1 {
+  color: var(--light-main);
+  font-weight: 900;
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+
+  margin-block: 2vh;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-block: 1vh;
+}
+
+.textfield > input {
+  width: 30vw;
+
+  border: none;
+  border-radius: 10px;
+  padding: 2vh;
+
+  background: #00000056;
+
+  color: var(--text-color);
+  font-size: 1rem;
+  box-shadow: 0px 10px 10px #00000056;
+  outline: none;
+}
+
+.textfield > label {
+  color: var(--text-color);
+  font-family: var(--main-font);
+
+  margin-block: 1vh;
+  margin-bottom: 1vh;
+}
+
+.textfield > label p {
+  color:  rgb(228, 142, 142);
+  font-size: 1.1vw;
+  margin: 0.1vh;
+}
+
+.half-card {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  margin-top: 1vh;
+  margin-block: 1.5vh;
+}
+
+.half-textfield > label {
+  color: var(--text-color);
+  font-family: var(--main-font);
+
+  margin-bottom: 1vh;
+}
+
+.half-textfield > label p {
+  color:  rgb(228, 142, 142);
+  font-size: 0.9vw;
+  margin: 0.1vh;
+}
+
+.half-textfield > input {
+  display: flex;
+  width: 14vw;
+
+  border: none;
+  border-radius: 10px;
+  padding: 2vh;
+
+  background: #00000056;
+  box-shadow: 0px 10px 40px #00000056;
+
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+}
+
+.checkbox {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.checkbox label {
+  font-size: 1.2vw;
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+.checkbox > label p {
+  color:  rgb(228, 142, 142);
+  font-size: 1.1vw;
+}
+
+#radio:hover {
+  cursor: pointer;
+}
+
+#labelCadastro{
+  margin-top: 1vh;
+
+  text-align: center;
+  width: 16vw;
+  background-color: rgb(74, 155, 74);
+  border-radius: 10px;
+}
+
+#labelCadastroF p{
+  color:  rgb(228, 142, 142);
+  font-size: 1.1vw;
+  margin-bottom: 1vh
+}
+
+#labelCadastro b{
+  font-family: Arial;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: var(--secundary-font);
+  font-weight: 800;
+  color: white;
+
+  margin-inline: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  width: 30vw;
+  height: 10vh;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--main-color);
+  box-shadow: 0px 10px 40px -12px #00000056;
+}
+
+.btn-login:hover {
+  background-color: var(--light-main);
+  color: var(--text-color);
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.btn-login:active {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.card-login p {
+  font-size: 1.2vw;
+
+  font-family: var(--main-font);
+  color: var(--text-color);
+}
+
+.card-login a {
+  text-decoration: none;
+  color: var(--light-main);
+  font-family: var(--secundary-font);
+  margin-right: 2vw;
+}
+
+.card-login a:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.card-login a:active {
+  color: var(--light-main);
+}
+
+#nav{
+  margin-bottom: 2vh;
+}
+/*===============TABLETS===============*/
+
+@media only screen and (max-width: 950px) {
+  /* TELA DE CADASTRO */
+
+  body {
+    background: #ffffff;
+  }
+
+  .main-login {
+    width: 100vw;
+    height: 105rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+  }
+
+  .left-login {
+    display: block;
+
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 2rem;
+
+    position: absolute;
+    top: 2rem;
+  }
+  .left-login img {
+    margin-inline: 17vw;
+  }
+
+  .left-login h1 {
+    margin-top: 0;
+    font-size: 6vw;
+  }
+
+  #logo{
+    margin-bottom: 5vh;
+   }
+
+  .right-login {
+    width: 100vw;
+    height: 60vh;
+
+    margin-top: 75vh;
+    margin-bottom: 8vh;
+  }
+
+  /* CAIXA DE CADASTRO */
+
+  .card-login {
+    width: 75%;
+    height: auto;
+    margin-top: 12vh;
+  }
+  .textfield > label {
+    margin-top: 1vh;
+  }
+  .textfield > input {
+    width: 60vw;
+
+    font-size: 1rem;
+  }
+  .checkbox > label p {
+    font-size: 2vw;
+  }
+  .half-textfield > input {
+    display: flex;
+    width: 29vw;
+  }
+
+  .half-textfield > label p {
+    font-size: 2vw;
+  }
+
+  .textfield > label p {
+    font-size: 2vw;
+  }
+
+  .checkbox {
+    margin-top: 2vh;
+  }
+
+  .checkbox label {
+    font-size: 2.5vw;
+    margin: 0 ;
+  }
+
+
+  #labelCadastro{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 30vw;
+  }
+  #labelCadastroF p{
+    color:  rgb(228, 142, 142);
+    font-size: 1rem;
+    margin-bottom: 1vh
+  }
+  
+  #labelCadastro b{
+    font-size: 2.5vw;
+  }
+
+  .btn-login {
+    font-size: 0.9rem;
+
+    width: 60vw;
+    height: 6rem;
+  }
+  .card-login p {
+    font-size: 2.5vw;
+    margin-bottom: 3vh;
+  }
+
+  .card-login a {
+    font-size: 2.5vw;
+  }
+}
+
+/*===============SMARTPHONES===============*/
+
+@media only screen and (max-width: 600px) {
+  /* TELA DE CADASTRO */
+
+  body {
+    background: #ffffff;
+  }
+
+  .main-login {
+    width: 100vw;
+    height: 12rem;
+  }
+
+  .left-login {
+    display: none;
+  }
+
+  .left-login h1 {
+    display: none;
+  }
+  .left-login img {
+    display: none;
+  }
+
+  .right-login {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 113vh;
+    margin-bottom: 30vh;
+  }
+
+  /* CAIXA DE CADASTRO */
+
+  .card-login {
+    width: 80%;
+    height: auto;
+    padding: 1vh 5vw;
+    
+  
+    margin-bottom: 8.5rem;
+    justify-content: center;
+    display: table;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .card-login h1 {
+    font-size: 2.5rem;
+    text-align: center;
+
+    margin-bottom: 2vh;
+  }
+
+  .textfield > input {
+    width: 70vw;
+
+    font-size: 0.8rem;
+  }
+  .textfield > label {
+    font-size: 1rem;
+  }
+
+  .textfield > label p {
+    font-size: 3vw;
+  }
+  .half-textfield > label p {
+    font-size: 3vw;
+  }
+  .half-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin-block: 2vh;
+  }
+
+  .half-textfield > label {
+    margin-bottom: 1vh;
+  }
+
+  .half-textfield > input {
+    display: flex;
+    width: 70vw;
+    padding: 2vh;
+    font-size: 1rem;
+  }
+
+  .checkbox {
+    margin-top: 2vh;
+  }
+
+  .checkbox label {
+    font-size: 0.8rem;
+  }
+
+  .checkbox > label p {
+    font-size: 3vw;
+  }
+
+  #labelCadastro{
+    margin-top: 1vh;
+    width: 60vw;
+  }
+   #labelCadastroF p{
+    color:  rgb(228, 142, 142);
+    font-size: 0.8rem;
+    margin-bottom: 1vh
+  }
+
+  #labelCadastro b{
+    font-size: 3vw;
+  }
+
+  .btn-login {
+    font-size: 0.9rem;
+
+    width: 70vw;
+    height: 4rem;
+
+    padding-inline: 1rem;
+    margin: 1rem;
+  }
+  .card-login p {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+  }
+
+  .card-login a {
+    font-size: 3vw;
+  }
+}
