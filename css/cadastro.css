@@ -175,7 +175,7 @@
   padding: 2vh;
 
   background: #00000056;
-  box-shadow: 0px 10px 40px #00000056;
+  box-shadow: 0px 10px 10px #00000056;
 
   color: var(--text-color);
   font-size: 1rem;
