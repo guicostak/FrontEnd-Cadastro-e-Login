@@ -10,10 +10,10 @@
 :root{
   --main-color: #ff8701;
   --text-color: #f0ffffde;
-  --light-main: #ff6a00;
+  --light-main: #ff7614;
   --light-text: #6a6e81;
   --main-background: #ffffff;
-  --card-bakcground:  #5a5c66;
+  --card-bakcground:  #505155;
 
   --main-font: Optima, sans-serif;
   --secundary-font: Arial;
@@ -91,7 +91,7 @@
   padding: 30px 35px;
   background: var(--card-bakcground);
   border-radius: 20px;
-  box-shadow: 0px 10px 40px #00000056;
+  box-shadow: 0px 10px 10px #00000056;
 }
 
 .card-login h1{
@@ -210,7 +210,6 @@
 }
 
 .card-login a{
-  text-decoration: none;
   color: var(--light-main);
   font-family: var(--secundary-font)
 }
